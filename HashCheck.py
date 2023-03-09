@@ -21,3 +21,8 @@ with open("BlockHash.txt", encoding='utf-8') as f:
     mixHash
     nonce
     '''
+
+    a = "parentHash"
+    pattern = f"\"{a}\":\"([a-f|0-9|x]+)\","
+    result = re.findall(pattern, content)
+    print(result)
