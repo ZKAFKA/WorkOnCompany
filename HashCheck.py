@@ -1,2 +1,23 @@
-from web3 importWeb3
-w3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/cb6f0b06f6754b21b6ef871ffb5b049c'))
+import re
+
+with open("BlockHash.txt", encoding='utf-8') as f:
+    content = f.read()
+    print(content)
+
+    '''
+    parentHash
+    sha3Uncle
+    miner
+    stateRoot
+    transactionsRoot
+    receiptsRoot
+    logsBloom
+    difficulty
+    number
+    gasLimit
+    gasUsed
+    timestamp
+    extraData
+    mixHash
+    nonce
+    '''
